@@ -1,0 +1,89 @@
+/* Reset basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #801923; /* cherry red background */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #de837b;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Horizontal row container */
+.portfolio-row {
+    display: flex;
+    justify-content: space-between; /* left-right spread */
+    align-items: center;             /* vertical center */
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #eea79c;
+    border-radius: 15px;
+}
+
+/* Left and Right text */
+.portfolio-left, .portfolio-right {
+    width: 25%;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Center image */
+.portfolio-center {
+    width: 30%;
+    height: 300px; /* medium image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f4c7c2; /* optional box behind image */
+}
+
+.portfolio-center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive layout for small screens */
+@media screen and (max-width: 900px) {
+    .portfolio-row {
+        flex-direction: column; /* stack vertically */
+        text-align: center;
+    }
+    .portfolio-left, .portfolio-center, .portfolio-right {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .portfolio-center {
+        height: 250px;
+    }
+}
