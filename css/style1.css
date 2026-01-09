@@ -1,14 +1,13 @@
-/* Reset basics */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body style */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #801923; /* cherry red background */
+    background-color: #801923; 
     color: #fff;
     min-height: 100vh;
     display: flex;
@@ -16,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -35,11 +34,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Horizontal row container */
+
 .portfolio-row {
     display: flex;
-    justify-content: space-between; /* left-right spread */
-    align-items: center;             /* vertical center */
+    justify-content: space-between; 
+    align-items: center;             
     width: 90%;
     margin: 50px auto;
     padding: 30px;
@@ -47,23 +46,23 @@ nav ul li a {
     border-radius: 15px;
 }
 
-/* Left and Right text */
+
 .portfolio-left, .portfolio-right {
     width: 25%;
     text-align: left;
     font-size: 16px;
 }
 
-/* Center image */
+
 .portfolio-center {
     width: 30%;
-    height: 300px; /* medium image */
+    height: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #f4c7c2; /* optional box behind image */
+    background-color: #f4c7c2; 
 }
 
 .portfolio-center img {
@@ -73,10 +72,10 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Responsive layout for small screens */
+
 @media screen and (max-width: 900px) {
     .portfolio-row {
-        flex-direction: column; /* stack vertically */
+        flex-direction: column; 
         text-align: center;
     }
     .portfolio-left, .portfolio-center, .portfolio-right {
