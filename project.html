@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Reeju | About Me</title>
+    <meta charset="UTF-8">
+    <title>Reeju | Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Hamburger toggle -->
+    <input type="checkbox" id="nav-toggle">
+
+    <!-- Hamburger icon -->
+    <label for="nav-toggle" class="hamburger">☰</label>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <a href="home.html">Home</a>
+        <a href="index.html">About Me</a>
+        <a href="Project.html">Project</a>
+        <a href="Video.html">Video</a>
+        <a href="sitereport.html">Site Report</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    
-    <div class="portfolio-row">
+    <h1 class="page-title">My Projects</h1>
 
-       
-        <div class="portfolio-left">
-            <h2>About Me</h2>
-            <p>Hello! I am Reeju, a student who is passionate about learning new things. I enjoy coding websites and designing layouts with unique colours and creativity.</p>
+    <div class="projects-grid">
+
+        <div class="project-box">
+            <div class="project-card-visual"></div>
+            <p>Project 1 Description</p>
         </div>
 
-        
-        <div class="portfolio-center">
-            <img src="images/pic.jpg" alt="Reeju Photo">
+        <div class="project-box">
+            <div class="project-card-visual"></div>
+            <p>Project 2 Description</p>
         </div>
 
-        
-        <div class="portfolio-right">
-            <h2>Interests</h2>
-            <p>I am interested in editing and designing. As a beginner, 
-                gaining new ideas every day has helped me improve my skills and grow my interest in this field.</p>
+
+        <div class="project-box">
+            <div class="project-card-visual"></div>
+            <p>Project 3 Description</p>
+        </div>
+
+        <div class="project-box">
+            <div class="project-card-visual"></div>
+            <p>Project 4 Description</p>
         </div>
 
     </div>

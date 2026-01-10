@@ -2,54 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Reeju | Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Portfolio</title>
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="style5.css">
 </head>
-
 <body>
-    
 
-    <section class="contact-section">
+    <!-- Hamburger toggle -->
+    <input type="checkbox" id="nav-toggle">
 
-        
-        <div class="contact-image">
-            <img src="images/pic1.jpg.png" alt="My Photo">
+    <!-- Hamburger icon -->
+    <label for="nav-toggle" class="hamburger">☰</label>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <a href="home.html">Home</a>
+        <a href="index.html">About Me</a>
+        <a href="Project.html">Project</a>
+        <a href="Video.html">Video</a>
+        <a href="sitereport.html">Site Report</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 class="page-title">Contact Me</h1>
+
+    <!-- Grid container -->
+    <div class="contact-grid">
+
+        <!-- Form box -->
+        <div class="contact-box">
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name :" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" placeholder="Subject :" required>
+
+                <label for="message">Message</label>
+                <textarea placeholder="Your Message Here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
-       
         <div class="contact-info">
-
-            <div class="info-box">
-                <h3>Education</h3>
-                <p>
-                    Secondary Education (2009-2020),
-
-                    Higher Secondary Education (2022-2024), 
-
-                    Bachelor's Degree (2025-Present) 
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>Languages</h3>
-                <p>
-                    English,
-                    Nepali
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>Contact</h3>
-                <p>
-                    Email: reejus122@.com <br>
-                    Location: Kathmandu, Nepal
-                </p>
-            </div>
-
+            <p>Email: example@example.com</p>
+            <p>Phone: +1234567890</p>
         </div>
+       
 
-    </section>
+    </div>
 
 </body>
 </html>

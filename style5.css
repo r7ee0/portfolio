@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #801923;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #de837b;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Hamburger */
+#nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    display: block;
+    font-size: 22px;
+    color: white;
+    background-color: #de837b;
+    padding: 15px 0;
+    width: 65px;
+    max-width: 600px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Page title */
+.page-title {
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+/* Grid container */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* single column for now */
+    justify-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Contact Box */
+.contact-box {
+    background-color: #eea79c;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-box:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* Form styling */
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #801923;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #de837b;
+    transform: scale(1.05);
+}
+
+/* Responsive Hamburger */
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 40px;
+    }
+
+    #nav-toggle:checked + .hamburger + .nav-bar {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
